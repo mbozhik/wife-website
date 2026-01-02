@@ -5,6 +5,16 @@ import imageCopy2 from './assets/image copy 2.png'
 import imageCopy3 from './assets/image copy 3.png'
 import imageCopy4 from './assets/image copy 4.png'
 import CircularText from './CircularText'
+import {Counter} from './Counter'
+
+// Функция для подсчета дней от даты (21.01.2022)
+function getDaysSinceActivation() {
+  const activationDate = new Date('2022-01-21')
+  const today = new Date()
+  const timeDiff = today.getTime() - activationDate.getTime()
+  const daysDiff = Math.floor(timeDiff / (1000 * 3600 * 24))
+  return daysDiff
+}
 
 function App() {
   return (
@@ -19,22 +29,21 @@ function App() {
             <h1 className="hero-title">Лучшая жена</h1>
             <p className="hero-description">Премиальное качество. Забота. Ласка. Бесплатная доставка любви.</p>
             <div className="hero-days-container">
-              <span className="hero-days-number">678</span>
+              <span className="hero-days-number">
+                <Counter initialValue={getDaysSinceActivation()} />
+              </span>
               <span className="hero-days-text">дней</span>
             </div>
             <p className="hero-days-label">прошло с момента, как лучший муж активировал подписку</p>
-            <a href="#testimonials" className="hero-button">Получить бессрочную подписку на любовь</a>
+            <a href="#testimonials" className="hero-button">
+              Получить бессрочную подписку на любовь
+            </a>
           </div>
           <div className="hero-image-wrapper">
             <img src={image} alt="Best Wife" className="hero-image" />
             <div className="circle-badge">
               <div className="circle-background"></div>
-              <CircularText 
-                text="Доступна только в единственном экземпляре     " 
-                radius={190}
-                fontSize={24}
-                startAngle={320}
-              />
+              <CircularText text="Доступна только в единственном экземпляре     " radius={190} fontSize={24} startAngle={320} />
             </div>
           </div>
         </div>

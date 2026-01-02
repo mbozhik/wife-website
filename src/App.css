@@ -32,7 +32,8 @@
 }
 
 .hero-block {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 4rem;
   margin-top: 220px;
@@ -48,7 +49,7 @@
   font-family: 'Goldman', sans-serif;
   font-weight: 700;
   font-size: 84px;
-  color: #1E2A38;
+  color: #1e2a38;
   margin: 0 0 0.5rem 0;
   line-height: 1.2;
 }
@@ -57,7 +58,7 @@
   font-family: 'Helvetica', sans-serif;
   font-weight: 300;
   font-size: 24px;
-  color: #1E2A38;
+  color: #1e2a38;
   margin: 0 0 0.75rem 0;
   line-height: 1.6;
 }
@@ -73,7 +74,7 @@
   font-family: 'Goldman', sans-serif;
   font-weight: 700;
   font-size: 231px;
-  color: #A3B7AE;
+  color: #a3b7ae;
   line-height: 1;
 }
 
@@ -81,14 +82,14 @@
   font-family: 'Goldman', sans-serif;
   font-weight: 700;
   font-size: 24px;
-  color: #A3B7AE;
+  color: #a3b7ae;
 }
 
 .hero-days-label {
   font-family: 'Helvetica', sans-serif;
   font-weight: 300;
   font-size: 24px;
-  color: #1E2A38;
+  color: #1e2a38;
   margin: 0;
 }
 
@@ -96,8 +97,8 @@
   font-family: 'Helvetica', sans-serif;
   font-weight: 400;
   font-size: 24px;
-  color: #1E2A38;
-  background-color: #E0A39A;
+  color: #1e2a38;
+  background-color: #e0a39a;
   border-radius: 32px;
   width: 626px;
   height: 80px;
@@ -115,7 +116,7 @@
 .hero-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(224, 163, 154, 0.4);
-  color: #1E2A38;
+  color: #1e2a38;
 }
 
 .hero-image-wrapper {
@@ -148,7 +149,7 @@
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background-color: #E0A39A;
+  background-color: #e0a39a;
   top: 0;
   left: 0;
 }
@@ -172,8 +173,8 @@
 .card {
   width: 507px;
   border-radius: 32px;
-  background-color: #F9F9F9;
-  border: 1px solid #ECECEC;
+  background-color: #f9f9f9;
+  border: 1px solid #ececec;
   padding: 32px 24px;
   display: flex;
   flex-direction: column;
@@ -190,21 +191,21 @@
   font-family: 'Helvetica', sans-serif;
   font-weight: 300;
   font-size: 24px;
-  color: #1E2A38;
+  color: #1e2a38;
 }
 
 .card-line-2 {
   font-family: 'Goldman', sans-serif;
   font-weight: 700;
   font-size: 48px;
-  color: #A3B7AE;
+  color: #a3b7ae;
 }
 
 .card-line-3 {
   font-family: 'Helvetica', sans-serif;
   font-weight: 300;
   font-size: 24px;
-  color: #1E2A38;
+  color: #1e2a38;
   margin-top: 32px;
 }
 
@@ -228,14 +229,14 @@
 }
 
 .big-cards-block::before {
-  background-color: #E0A39A;
+  background-color: #e0a39a;
   left: -419px;
   top: 30%;
   transform: translateY(-50%);
 }
 
 .big-cards-block::after {
-  background-color: #A3B7AE;
+  background-color: #a3b7ae;
   right: -419px;
   top: 70%;
   transform: translateY(-50%);
@@ -245,8 +246,8 @@
   width: 100%;
   height: 500px;
   border-radius: 120px;
-  background-color: #F9F9F9;
-  border: 1px solid #ECECEC;
+  background-color: #f9f9f9;
+  border: 1px solid #ececec;
   padding: 29px;
   margin-bottom: 82px;
   position: relative;
@@ -254,13 +255,12 @@
   z-index: 1;
 }
 
-
 .big-card:last-child {
   margin-bottom: 0;
 }
 
 .big-card-promo {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .big-card-content {
@@ -286,14 +286,14 @@
   font-family: 'Helvetica', sans-serif;
   font-weight: 700;
   font-size: 24px;
-  color: #E0A39A;
+  color: #e0a39a;
 }
 
 .big-card-line-2 {
   font-family: 'Helvetica', sans-serif;
   font-weight: 300;
   font-size: 24px;
-  color: #1E2A38;
+  color: #1e2a38;
   margin-top: 90px;
 }
 
@@ -301,7 +301,7 @@
   font-family: 'Goldman', sans-serif;
   font-weight: 700;
   font-size: 231px;
-  color: #A3B7AE;
+  color: #a3b7ae;
   line-height: 1;
 }
 
@@ -339,7 +339,7 @@
   font-family: 'Helvetica', sans-serif;
   font-weight: 700;
   font-size: 24px;
-  color: #E0A39A;
+  color: #e0a39a;
   margin-bottom: 89px;
 }
 
@@ -347,7 +347,7 @@
   font-family: 'Helvetica', sans-serif;
   font-weight: 300;
   font-size: 24px;
-  color: #1E2A38;
+  color: #1e2a38;
   margin-top: 1rem;
 }
 
@@ -368,7 +368,7 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-color: #A3B7AE;
+  background-color: #a3b7ae;
   color: white;
   display: flex;
   align-items: center;
@@ -383,14 +383,14 @@
   font-family: 'Helvetica', sans-serif;
   font-weight: 300;
   font-size: 24px;
-  color: #1E2A38;
+  color: #1e2a38;
 }
 
 .big-card-premium-footer {
   font-family: 'Helvetica', sans-serif;
   font-weight: 300;
   font-size: 18px;
-  color: #1E2A38;
+  color: #1e2a38;
   margin-top: 3rem;
 }
 
@@ -398,7 +398,7 @@
   font-family: 'Helvetica', sans-serif;
   font-weight: 300;
   font-size: 24px;
-  color: #1E2A38;
+  color: #1e2a38;
   margin-top: 90px;
 }
 
@@ -406,7 +406,7 @@
   font-family: 'Goldman', sans-serif;
   font-weight: 700;
   font-size: 150px;
-  color: #A3B7AE;
+  color: #a3b7ae;
   line-height: 1;
 }
 
@@ -414,7 +414,7 @@
   font-family: 'Helvetica', sans-serif;
   font-weight: 300;
   font-size: 24px;
-  color: #1E2A38;
+  color: #1e2a38;
   margin-top: 2rem;
 }
 
@@ -429,7 +429,6 @@
   min-height: 600px;
 }
 
-
 .testimonials-content {
   flex: 1;
   display: flex;
@@ -443,7 +442,7 @@
   font-family: 'Helvetica', sans-serif;
   font-weight: 700;
   font-size: 48px;
-  color: #1E2A38;
+  color: #1e2a38;
   text-align: right;
   margin: 0 0 3rem 0;
   width: 100%;
@@ -473,8 +472,8 @@
 .testimonial-card {
   flex: 1;
   max-width: 500px;
-  background-color: #F8F8F8;
-  border: 1px solid #ECECEC;
+  background-color: #f8f8f8;
+  border: 1px solid #ececec;
   border-radius: 32px;
   padding: 2rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -486,7 +485,7 @@
   font-family: 'Helvetica', sans-serif;
   font-weight: 700;
   font-size: 24px;
-  color: #A3B7AE;
+  color: #a3b7ae;
 }
 
 .testimonial-header {
@@ -498,7 +497,7 @@
 
 .testimonial-stars {
   font-size: 34px;
-  color: #FFD700;
+  color: #ffd700;
   letter-spacing: 0.1em;
   line-height: 1;
   height: 34px;
@@ -508,14 +507,14 @@
   font-family: 'Helvetica', sans-serif;
   font-weight: 300;
   font-size: 24px;
-  color: #1E2A38;
+  color: #1e2a38;
   line-height: 1.6;
   font-style: italic;
   margin-top: 1rem;
 }
 
 .footer {
-  background-color: #E0A39A;
+  background-color: #e0a39a;
   height: 212px;
   display: flex;
   align-items: center;
@@ -530,7 +529,7 @@
   font-family: 'Handi', cursive;
   font-weight: 400;
   font-size: 40px;
-  color: #1E2A38;
+  color: #1e2a38;
   font-style: normal;
 }
 
@@ -546,7 +545,7 @@
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 24px;
-  color: #1E2A38;
+  color: #1e2a38;
   text-align: right;
 }
 
