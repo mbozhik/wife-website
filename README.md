@@ -1,11 +1,90 @@
-# React + Vite
+# BestWife™ Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful React + Vite website showcasing the best wife features and services.
 
-Currently, two official plugins are available:
+## Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+
+# Lint code
+npm run lint
+```
+
+## Docker
+
+### Build and run with Docker Compose (recommended)
+
+```bash
+# Build and run the container
+docker-compose up --build
+
+# Run in background
+docker-compose up -d --build
+
+# Stop the container
+docker-compose down
+```
+
+The application will be available at `http://localhost:8080`
+
+### Build and run manually
+
+```bash
+# Build the Docker image
+docker build -t wife-website .
+
+# Run the container
+docker run -p 8080:80 wife-website
+```
+
+## Tech Stack
+
+- **React 19** - UI library
+- **Vite** - Build tool and dev server
+- **ESLint** - Code linting
+- **Docker** - Containerization
+- **Nginx** - Production web server
+
+## Features
+
+- Responsive design
+- Custom fonts and styling
+- Circular text animations
+- Premium wife service showcase
+- Testimonials section
+- Google Fonts integration
+
+## Project Structure
+
+```
+src/
+├── assets/          # Images and static assets
+├── App.jsx          # Main application component
+├── CircularText.jsx # Circular text animation component
+├── main.jsx         # Application entry point
+└── *.css            # Styling files
+```
+
+## Deployment
+
+The application is containerized and ready for deployment on any platform that supports Docker:
+
+- Docker Hub
+- AWS ECS/Fargate
+- Google Cloud Run
+- Kubernetes
+- Any VPS with Docker
 
 ## React Compiler
 
