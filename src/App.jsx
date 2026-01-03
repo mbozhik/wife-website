@@ -36,7 +36,7 @@ function App() {
             </div>
             <p className="hero-days-label">прошло с момента, как лучший муж активировал подписку</p>
             <a href="#testimonials" className="hero-button">
-              Получить бессрочную подписку на любовь
+              Получить бессрочную <br /> подписку на любовь
             </a>
           </div>
           <div className="hero-image-wrapper">
@@ -138,7 +138,9 @@ function App() {
             <div className="big-card-content">
               <div className="big-card-text">
                 <div className="big-card-line-1">Ночная акция</div>
-                <div className="big-card-night-line-3">Otaku Deluxe</div>
+                <div className="big-card-night-line-3">
+                  Otaku <br /> Deluxe
+                </div>
                 <div className="big-card-night-line-4">Гарантирует уютный марафон аниме и игр вдвоём (пока я не усну)</div>
               </div>
               <div className="big-card-image-wrapper">

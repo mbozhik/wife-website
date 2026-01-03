@@ -26,6 +26,11 @@
   white-space: nowrap;
   font-family: 'Helvetica', sans-serif;
   font-weight: 300;
-  color: #1E2A38;
+  color: var(--text-primary);
 }
 
+@media (max-width: 768px) {
+  .circular-text-letter {
+    display: none;
+  }
+}

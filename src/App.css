@@ -49,6 +49,7 @@
   width: 100%;
   margin: 0;
   padding: 1rem 0;
+  overflow: hidden;
 }
 
 .hero-block {
@@ -133,6 +134,10 @@
   text-decoration: none;
 }
 
+.hero-button br {
+  display: none;
+}
+
 .hero-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(224, 163, 154, 0.4);
@@ -145,6 +150,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  /* overflow: hidden; */
 }
 
 .hero-image {
@@ -178,6 +184,7 @@
   padding: 0 160px;
   margin-top: 240px;
   margin-bottom: 0;
+  overflow: hidden;
 }
 
 .cards-row {
@@ -235,6 +242,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
 }
 
 .big-cards-block::before,
@@ -442,7 +450,6 @@
   padding: 0 160px;
   margin-top: 240px;
   position: relative;
-  overflow: visible;
   display: flex;
   align-items: center;
   gap: 4rem;
@@ -624,7 +631,7 @@
   }
 
   .hero-block {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     padding: 0 20px;
     margin-top: 40px;
     gap: 2rem;
@@ -652,9 +659,15 @@
 
   .hero-button {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     font-size: 18px;
-    height: 60px;
+    height: auto;
+    min-height: 60px;
+    padding: 15px 20px;
+  }
+
+  .circle-background {
+    display: none;
   }
 
   .hero-image-wrapper {
@@ -662,10 +675,10 @@
   }
 
   .circle-badge {
-    width: 200px;
-    height: 200px;
-    top: -30px;
-    right: -30px;
+    width: 180px;
+    height: 180px;
+    top: -25px;
+    right: -25px;
   }
 
   .cards-block {
@@ -687,6 +700,20 @@
   .big-cards-block {
     padding: 0 20px;
     margin-top: 60px;
+  }
+
+  .big-cards-block::before,
+  .big-cards-block::after {
+    width: 200px;
+    height: 200px;
+  }
+
+  .big-cards-block::before {
+    left: -100px;
+  }
+
+  .big-cards-block::after {
+    right: -100px;
   }
 
   .big-card {
@@ -785,5 +812,217 @@
   .footer-line-2 {
     font-size: 18px;
     text-align: left;
+  }
+}
+
+/* Extra small devices (phones, 480px and below) */
+@media (max-width: 480px) {
+  .top-menu {
+    padding: 0.75rem 15px;
+    margin-top: 15px;
+  }
+
+  .menu-left {
+    font-size: 28px;
+  }
+
+  .menu-right {
+    font-size: 16px;
+  }
+
+  .hero-block {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+    margin-top: 30px;
+    gap: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-days-number {
+    font-size: 80px;
+  }
+
+  .hero-days-text,
+  .hero-days-label {
+    font-size: 16px;
+  }
+
+  .hero-button {
+    font-size: 16px;
+    height: auto;
+    min-height: 50px;
+    padding: 12px 16px;
+    max-width: 280px;
+  }
+
+  .hero-button br {
+    display: block;
+  }
+
+  .circle-background {
+    display: none;
+  }
+
+  .circle-badge {
+    width: 120px;
+    height: 120px;
+    top: -15px;
+    right: -15px;
+  }
+
+  .cards-block {
+    padding: 0 15px;
+    margin-top: 40px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card-line-1 {
+    font-size: 18px;
+  }
+
+  .card-line-2 {
+    font-size: 16px;
+  }
+
+  .card-line-3 {
+    font-size: 14px;
+  }
+
+  .big-cards-block {
+    padding: 0 15px;
+    margin-top: 40px;
+  }
+
+  .big-cards-block::before,
+  .big-cards-block::after {
+    display: none;
+  }
+
+  .big-card {
+    padding: 15px;
+    min-height: 350px;
+    border-radius: 40px;
+  }
+
+  .big-card-line-1,
+  .big-card-premium-title {
+    font-size: 24px;
+  }
+
+  .big-card-line-2,
+  .big-card-line-3,
+  .big-card-night-line-3,
+  .big-card-night-line-4 {
+    font-size: 16px;
+  }
+
+  .big-card-premium-list {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .big-card-premium-item {
+    padding: 8px 0;
+  }
+
+  .big-card-premium-number {
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .big-card-premium-text {
+    font-size: 14px;
+  }
+
+  .testimonials-block {
+    padding: 0 15px;
+    margin-top: 40px;
+  }
+
+  .testimonials-title {
+    font-size: 28px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .testimonial-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .testimonial-author {
+    font-size: 16px;
+  }
+
+  .testimonial-stars {
+    font-size: 14px;
+  }
+
+  .testimonial-text {
+    font-size: 18px;
+  }
+
+  .footer {
+    padding: 1.5rem 15px;
+    margin-top: 30px;
+  }
+
+  .footer-left {
+    font-size: 28px;
+  }
+
+  .footer-line-1,
+  .footer-line-2 {
+    font-size: 16px;
+  }
+}
+
+/* Tablet devices (768px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .top-menu {
+    padding: 1rem 40px;
+  }
+
+  .hero-block {
+    padding: 0 40px;
+  }
+
+  .cards-block,
+  .big-cards-block,
+  .testimonials-block {
+    padding: 0 40px;
+  }
+
+  .big-cards-block::before,
+  .big-cards-block::after {
+    width: 300px;
+    height: 300px;
+  }
+
+  .big-cards-block::before {
+    left: -150px;
+  }
+
+  .big-cards-block::after {
+    right: -150px;
+  }
+
+  .footer {
+    padding: 2rem 40px;
   }
 }
