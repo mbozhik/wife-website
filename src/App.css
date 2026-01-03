@@ -690,16 +690,19 @@
     flex-direction: column;
     gap: 20px;
     margin-bottom: 20px;
+    align-items: center;
   }
 
   .card {
     width: 100%;
-    max-width: 100%;
+    max-width: 320px;
   }
 
   .big-cards-block {
     padding: 0 20px;
     margin-top: 60px;
+    align-items: center;
+    justify-content: center;
   }
 
   .big-cards-block::before,
@@ -720,6 +723,8 @@
     height: auto;
     min-height: 400px;
     padding: 20px;
+    max-width: 320px;
+    width: 100%;
   }
 
   .big-card-content {
@@ -729,6 +734,10 @@
 
   .big-card-text {
     padding-left: 0;
+  }
+
+  .big-card-line-2 {
+    margin-top: 0;
   }
 
   .big-card-line-3,
@@ -885,6 +894,11 @@
 
   .card {
     padding: 20px;
+    max-width: 280px;
+  }
+
+  .cards-row {
+    align-items: center;
   }
 
   .card-line-1 {
@@ -902,6 +916,8 @@
   .big-cards-block {
     padding: 0 15px;
     margin-top: 40px;
+    align-items: center;
+    justify-content: center;
   }
 
   .big-cards-block::before,
@@ -913,6 +929,8 @@
     padding: 15px;
     min-height: 350px;
     border-radius: 40px;
+    max-width: 280px;
+    width: 100%;
   }
 
   .big-card-line-1,
@@ -925,6 +943,7 @@
   .big-card-night-line-3,
   .big-card-night-line-4 {
     font-size: 16px;
+    margin-top: 0;
   }
 
   .big-card-premium-list {
