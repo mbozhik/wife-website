@@ -74,7 +74,7 @@ function App() {
             <div className="card">
               <div className="card-line-1">Порядок без усилий</div>
               <div className="card-line-2">Lite</div>
-              <div className="card-line-3">Появляется сама собой. Муж ничего не подозревает.</div>
+              <div className="card-line-3">Появляется сам собой. Муж ничего не подозревает.</div>
             </div>
             <div className="card">
               <div className="card-line-1">Антистресс-защита</div>
